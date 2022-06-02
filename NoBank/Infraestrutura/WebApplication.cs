@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Reflection;
 using System.Text;
 
 namespace NoBank.Infraestrutura
@@ -14,8 +15,14 @@ namespace NoBank.Infraestrutura
 
         public void StartWebApplication()
         {
+            while (true)
+                ManipularRequisicao();
+        }
+
+        private void ManipularRequisicao()
+        {
             var listener = new HttpListener();
-            
+
             listener.Start();
 
             foreach (var prefiso in _prefixos)
@@ -25,14 +32,21 @@ namespace NoBank.Infraestrutura
             var request = context.Request;
             var response = context.Response;
 
-            var conteudo = "<h1>Hello World</h1>";
-            var conteudoBytes = Encoding.UTF8.GetBytes(conteudo);
+            var path = request.Url.AbsolutePath;
 
-            response.ContentType = "text/html; charset=utf-8";
+            var assembly = Assembly.GetExecutingAssembly();
+            var nomeResource = Utils.PathToNameAssembly(path);
+
+            var resourceStrem = assembly.GetManifestResourceStream(nomeResource);
+            var bytesResource = new byte[resourceStrem.Length];
+
+            resourceStrem.Read(bytesResource, 0, (int)resourceStrem.Length);
+
+            response.ContentType = Utils.GetContentType(path);
             response.StatusCode = 200;
-            response.ContentLength64 = conteudoBytes.Length;
+            response.ContentLength64 = resourceStrem.Length;
 
-            response.OutputStream.Write(conteudoBytes, 0, conteudoBytes.Length);
+            response.OutputStream.Write(bytesResource, 0, bytesResource.Length);
             response.OutputStream.Close();
 
             listener.Stop();

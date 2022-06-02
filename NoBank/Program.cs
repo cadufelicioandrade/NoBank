@@ -1,6 +1,5 @@
 ﻿using NoBank.Infraestrutura;
 
-Console.WriteLine("Hello, World!");
 
 string[] prefixos = new string[]
 {
@@ -12,4 +11,3 @@ var webApp = new WebApplication(prefixos);
 
 webApp.StartWebApplication();
 
-Console.ReadLine();
