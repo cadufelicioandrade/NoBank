@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NoBank.Portal/1.0.0": {
+        "dependencies": {
+          "NoBank.Service": "1.0.0"
+        },
+        "runtime": {
+          "NoBank.Portal.dll": {}
+        }
+      },
+      "NoBank.Service/1.0.0": {
+        "runtime": {
+          "NoBank.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NoBank.Portal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NoBank.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

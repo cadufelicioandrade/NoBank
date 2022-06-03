@@ -1,0 +1,15 @@
+C:\Projetos\Meus Projetos\NoBank\NoBank\bin\Debug\net6.0\NoBank.exe
+C:\Projetos\Meus Projetos\NoBank\NoBank\bin\Debug\net6.0\NoBank.deps.json
+C:\Projetos\Meus Projetos\NoBank\NoBank\bin\Debug\net6.0\NoBank.runtimeconfig.json
+C:\Projetos\Meus Projetos\NoBank\NoBank\bin\Debug\net6.0\NoBank.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank\bin\Debug\net6.0\NoBank.pdb
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.csproj.AssemblyReference.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.AssemblyInfoInputs.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.AssemblyInfo.cs
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.csproj.CoreCompileInputs.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\refint\NoBank.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.pdb
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\NoBank.genruntimeconfig.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank\obj\Debug\net6.0\ref\NoBank.dll

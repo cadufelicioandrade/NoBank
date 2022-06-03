@@ -1,0 +1,12 @@
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\bin\Debug\net6.0\NoBank.Service.deps.json
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\bin\Debug\net6.0\NoBank.Service.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\bin\Debug\net6.0\NoBank.Service.pdb
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.csproj.AssemblyReference.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.AssemblyInfoInputs.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.AssemblyInfo.cs
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.csproj.CoreCompileInputs.cache
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\refint\NoBank.Service.dll
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\NoBank.Service.pdb
+C:\Projetos\Meus Projetos\NoBank\NoBank.Service\obj\Debug\net6.0\ref\NoBank.Service.dll
