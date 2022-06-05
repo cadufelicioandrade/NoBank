@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NoBank.Portal.Controller
 {
-    public class CambioController
+    public class CambioController : ControllerBase
     {
         private readonly ICambioService _cambioService;
 
@@ -21,38 +21,17 @@ namespace NoBank.Portal.Controller
         public string BRL()
         {
             var valorFinal = _cambioService.Calcular("BRL", "USD", 1);
+            var resutlView = View();
 
-            var nomeCompletoResource = "NoBank.Portal.View.Cambio.BRL.html";
-            var assembly = Assembly.GetExecutingAssembly();
-
-            var streamRecurso = assembly.GetManifestResourceStream(nomeCompletoResource);
-
-            var sr = new StreamReader(streamRecurso);
-
-            var textPage = sr.ReadToEnd();
-
-            var textResult = textPage.Replace("VALOR_REAIS", valorFinal.ToString());
-
-            return textResult;
+            return resutlView.Replace("VALOR_MOEDA", valorFinal.ToString()); 
         }
 
         public string USD()
         {
             var valorFinal = _cambioService.Calcular("USD", "BRL", 1);
+            var resutlView = View();
 
-            var nomeCompletoResource = "NoBank.Portal.View.Cambio.USD.html";
-            var assembly = Assembly.GetExecutingAssembly();
-
-            var streamRecurso = assembly.GetManifestResourceStream(nomeCompletoResource);
-
-            var sr = new StreamReader(streamRecurso);
-
-            var textPage = sr.ReadToEnd();
-
-            var textResult = textPage.Replace("VALOR_DOLAR", valorFinal.ToString());
-
-            return textResult;
-            return textResult;
+            return resutlView.Replace("VALOR_MOEDA", valorFinal.ToString());
         }
     }
 }
