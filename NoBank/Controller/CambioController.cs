@@ -33,5 +33,22 @@ namespace NoBank.Portal.Controller
 
             return resutlView.Replace("VALOR_MOEDA", valorFinal.ToString());
         }
+
+        public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
+        {
+            var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
+            var resutlView = View();
+
+            //VALOR_MOEDA_ORIGEM MOEDA_ORIGEM = VALOR_MOEDA_DESTINO MOEDA_DESTINO
+
+            return resutlView.Replace("VALOR_MOEDA_ORIGEM", valor.ToString())
+                .Replace("VALOR_MOEDA_DESTINO", valorFinal.ToString())
+                .Replace("MOEDA_ORIGEM", moedaOrigem)
+                .Replace("MOEDA_DESTINO", moedaDestino);
+        }
+
+        public string Calculo(string moedaDestino, decimal valor)
+            => Calculo("BRL", moedaDestino, valor);
+
     }
 }
