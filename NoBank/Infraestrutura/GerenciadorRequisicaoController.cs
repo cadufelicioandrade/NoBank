@@ -24,10 +24,9 @@ namespace NoBank.Portal.Infraestrutura
             var controllerWrapper = Activator.CreateInstance("NoBank.Portal", fullcontroller, new object[0]);
             var controller = controllerWrapper.Unwrap();
 
-            //var methoInfo = controller.GetType().GetMethod(actionNome);
-            var methoInfo = _actionBinder.GetMethoInfo(controller, path);
+            var methoInfo = _actionBinder.GetActionBindInfo(controller, path);
 
-            var resultAction = (string)methoInfo.Invoke(controller, new object[0]);
+            var resultAction = (string)methoInfo.Invoke(controller);
 
             var bufferFile = Encoding.UTF8.GetBytes(resultAction);
             response.StatusCode = 200;
